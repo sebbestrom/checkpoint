@@ -23,7 +23,9 @@ def delete_word(C, ID):
 def save_dict(C):
     cur = C.cursor()
     cur.execute("COMMIT;")
-    cur.close()
+    cur.close()    
+def insert_word(C, word, translation):
+    cur.close
 
 while True: ## REPL - Read Execute Program Loop
     cmd = input("Command: ")
