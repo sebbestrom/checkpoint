@@ -41,3 +41,4 @@ while True: ## REPL - Read Execute Program Loop
     elif cmd == "quit":
         save_dict(conn)
         exit()
+#exit program 
