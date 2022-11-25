@@ -16,10 +16,12 @@ def read_dict(connection):
     rows = cur.fetchall()
     cur.close()
     return rows
+#add word
 def add_word(connection, word, translation):
     cur = C.cursor()
     cur.execute(f"INSERT INTO dictionary (word, translation) VALUES ('{word}', '{translation}');")
     cur.close()
+#delete word
 def delete_word(connection, ID):
     cur = C.cursor()
     cur.execute(f"DELETE FROM dictionary WHERE id = '{ID}';")
