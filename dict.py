@@ -26,6 +26,7 @@ def delete_word(connection, ID):
     cur = C.cursor()
     cur.execute(f"DELETE FROM dictionary WHERE id = '{ID}';")
     cur.close()
+#save dict
 def save_dict(connection):
     cur = C.cursor()
     cur.execute("COMMIT;")
